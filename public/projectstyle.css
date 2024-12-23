@@ -1,0 +1,40 @@
+.heading{
+    width: 30vw;
+    position: relative;
+    top: -110px;
+    left: 170px;
+}
+
+.heading p{
+    padding: 10px;
+    font-size: 0.8em;
+    color: grey;
+}
+
+/* apps stylilng */
+#complete-apps{
+    min-width: 50vw;
+    max-width: 75vw;
+    margin: auto;
+}
+
+.apps-body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 30px;
+    margin-bottom: 100px;
+    gap: 20px;
+}
+
+.apps-body .app-items img{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.apps-body .app-items p,h3,button{
+    padding: 15px;
+}
+
+.app-items{
+    border: 2px solid gray;
+}

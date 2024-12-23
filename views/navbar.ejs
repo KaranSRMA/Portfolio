@@ -1,0 +1,23 @@
+<header id="home">
+    <div class="socialprofile">
+        <div class="line"></div>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+    <!-- creating navbar -->
+    <nav>
+        <div class="logo">
+            <img src="./images/logo.png " alt="Logo Image" width="60">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="/"  class=<%= active==="home"?"active":"" %>><span class=<%= active!=='home'?'highlight':"" %>>#</span>home</a></li>
+                <li><a href="projects" class=<%= active==="projects"?"active":"" %>><span class=<%= active!=='projects'?'highlight':"" %>>#</span>works</a></li>
+                <li><a href="/#about"><span class="highlight">#</span>about-me</a></li>
+                <li><a href="/#contact"><span class="highlight">#</span>contact-me</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio • Portfolio</title>
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Parkinsans:wght@300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <%- include('navbar.ejs'); %>
+
+        <!-- creating main content  -->
+        <main>
+            <div class="container">
+                <div class="container-head">
+                    <h2>Karan is a <span class="highlight">web designer </span>and <span class="highlight">back-end
+                            developer</span></h2>
+                    <p>He crafts responsive websites where technologies meet creativity</p>
+                    <a href="contact" class="contact"><button>Hire me!!</button></a>
+                </div>
+
+                <div class="container-image">
+                    <img src="./images/hackerimg.png" alt="Image">
+                    <div class="box">
+                        <span class="colorbox"></span>
+                        <p>Currently working on <span>Backend</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thought">
+                <div class="thought-box1 same-box"><i class="fa-solid fa-quote-left"></i></div>
+                <div class="thought-box2">With great power comes great electricity bill</div>
+                <div class="thought-box3 same-box"><i class="fa-solid fa-quote-right"></i></div>
+                <div class="thought-box4">- Dr. Who</div>
+            </div>
+
+            <!-- projects section  -->
+            <section id="projects">
+                <div class="project-container">
+                    <div class="project-head">
+                        <h2><span class="highlight">#</span>projects</h2>
+                        <div class="pro-line"></div>
+                        <a href="projects">view all <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+
+                    <!-- image section  -->
+                    <div class="project-detail">
+                        <div class="probox">
+                            <img src="./images/chertnodes.png" alt="image" class="proimg">
+                            <p class="tags">HTML CSS Python Flask</p>
+                            <h3>ChertNodes</h3>
+                            <p class="ptag">Minecraft servers hosting</p>
+                            <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
+                        </div>
+
+                        <div class="probox">
+                            <img src="./images/protectx.png" alt="image" class="proimg">
+                            <p class="tags">React Express Ejs Node.js</p>
+                            <h3>ProtectX</h3>
+                            <p class="ptag">Discord anti crash-bot</p>
+                            <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
+                        </div>
+
+                        <div class="probox">
+                            <img src="./images/kahoot.png" alt="image" class="proimg">
+                            <p class="tags">CSS Express Next.js</p>
+                            <h3>Kahoot Answers Viewer</h3>
+                            <p class="ptag">Get answers to your kahoot quiz</p>
+                            <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- skills section  -->
+            <section id="skills">
+                <div class="skill-container">
+                    <h2><span class="highlight">#</span>skills</h2>
+                    <div class="skill-line"></div>
+                </div>
+                <div class="skill-img-cont">
+                    <img src="./images/skillimg.png" alt="image">
+                    <div class="lang-box">
+                        <div class="item1 lang-items">
+                            <div class="items-head">Languages</div>
+                            <div class="items-description">
+                                Java Python Javascript
+                            </div>
+                        </div>
+
+                        <div class="item2 lang-items">
+                            <div class="items-head">Databases</div>
+                            <div class="items-description">
+                                SQLite PostgreSQL Mongo
+                            </div>
+                        </div>
+
+                        <div class="item3 lang-items">
+                            <div class="items-head">Tools</div>
+                            <div class="items-description">
+                                VScode Neovim Linux Figma XFCE Arch Git Font-Awesome
+                            </div>
+                        </div>
+
+                        <div class="item4 lang-items">
+                            <div class="items-head">Other</div>
+                            <div class="items-description">
+                                HTML CSS Ejs Jinja Express
+                            </div>
+                        </div>
+
+                        <div class="item5 lang-items">
+                            <div class="items-head">Frameworks</div>
+                            <div class="items-description">
+                                React Flask Django
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- about me  -->
+            <section id="about">
+                <div class="about-left">
+                    <div class="about-head">
+                        <h2><span class="highlight">#</span>about-me</h2>
+                        <div class="about-line"></div>
+                    </div>
+                    <div class="about-desc">
+                        <p class="desc-head all-desc">Hello, i’m Karan</p>
+
+                        <p class="desc-self all-desc">I’m a self-taught front-end and back-end developer based in
+                            Uttarakhand, India. I can develop responsive websites from
+                            scratch and raise them into modern user-friendly web experiences.</p>
+
+                        <p class="desc-description all-desc">Transforming my creativity and knowledge into a websites
+                            has
+                            been my passion for over 3 year. I have
+                            been helping various clients to establish their presence online. I always strive to learn
+                            about
+                            the
+                            newest technologies and frameworks.</p>
+                    </div>
+                    <a href="./contact" class="contact"><button class="about-btn">Hire me <i
+                                class="fa-solid fa-arrow-right-long"></i></button></a>
+                </div>
+
+                <div class="about-right">
+                    <img src="./images/about.png" alt="about image">
+                </div>
+            </section>
+
+            <!-- contact section  -->
+            <section id="contact">
+                <div class="contact-head">
+                    <h2><span class="highlight">#</span>contact-me</h2>
+                    <div class="cont-line"></div>
+                </div>
+
+                <div class="contact-body">
+                    <p>I’m interested in freelance opportunities. However, if you have other request or question, don’t
+                        hesitate to contact me</p>
+                    <a href="./contact" class="contact"><button>Contact Me <i
+                                class="fa-solid fa-phone"></i></button></a>
+                </div>
+            </section>
+        </main>
+
+        <%- include("footer.ejs") %>
+
+            <script src="script.js"></script>
+            <!-- Toastify JS -->
+            <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+            <script>
+                // Check if there is a successMessage query parameter
+                <% if (successMessage) { %>
+                    // Show success toaster
+                    Toastify({
+                        text: "<%= successMessage %>",
+                        backgroundColor: "green",
+                        duration: 3000
+                    }).showToast();
+                <% } %>
+            </script>
+
+</body>
+
+</html>

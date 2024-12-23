@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <title>Projects • Portfolio</title>
+    <link rel="stylesheet" href="projectstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Parkinsans:wght@300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <%- include('navbar.ejs'); %>
+    <main>
+        <div class="heading">
+            <h2><span class="highlight">/</span>projects</h2>
+            <p>List of my all projects</p>
+        </div>
+
+        <!-- complete apps section  -->
+        <section id="complete-apps">
+            <div class="apps-head">
+                <h2><span class="highlight">#</span>complete apps</h2>
+            </div>
+            <div class="apps-body">
+
+                <div class="app-items">
+                    <img src="./images/chertnodes.png" alt="image" class="proimg">
+                    <p class="tags">HTML SCSS Python Flask</p>
+                    <h3>ChertNodes</h3>
+                    <p class="ptag">Minecraft servers hosting</p>
+                    <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
+                </div>
+
+                <div class="app-items">
+                    <img src="./images/protectx.png" alt="image" class="proimg">
+                    <p class="tags">React Express Discord.js Node.js</p>
+                    <h3>ProtectX</h3>
+                    <p class="ptag">Discord anti crash-bot</p>
+                    <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
+                </div>
+
+                <div class="app-items">
+                    <img src="./images/kahoot.png" alt="image" class="proimg">
+                    <p class="tags">CSS Express Node.js</p>
+                    <h3>Kahoot Answers Viewer</h3>
+                    <p class="ptag">Get answers to your kahoot quiz</p>
+                    <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
+                </div>
+
+                <div class="app-items">
+                    <img src="./images/kotikbot.png" alt="image" class="proimg">
+                    <p class="tags">HTML CSS JS</p>
+                    <h3>Kotik Bot</h3>
+                    <p class="ptag">Multi-functional discord bot</p>
+                    <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+    <%- include("footer.ejs") %>
+</body>
+
+</html>
