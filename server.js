@@ -9,9 +9,10 @@ const app = express();
 const port = process.env.PORT || 80;  // Use dynamic port in production environments
 
 app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'public')))
 
 // Middleware
-app.use(express.static('public'));
+// app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
