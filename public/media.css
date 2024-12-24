@@ -1,19 +1,134 @@
-/* @media only screen and (max-width:768px) {
+@media only screen and (max-width:768px) {
     nav {
         margin-left: 50px;
-        min-width: 80vw;
+        min-width: 95%;
     }
     .container {
-        margin-left: 170px;
+        margin: 100px auto;
+        flex-direction: column;
         gap: 50px;
+        min-width: 135vw;
+        position:static;
     }
+
+    .socialprofile{
+        display: none;
+    }
+    
     .container-head{
-        min-width: 30vw;
+        min-width: 75%;
+        margin: auto;
     }
     .container .container-head button {
-        width: 55%;
+        display: none;
     }
-} */
+
+    .container-image{
+        width: 70%;
+        margin: auto;
+    }
+
+    #projects{
+        margin:auto;
+        min-width: 135vw;
+        max-width: 135vw;
+    }
+
+    .project-detail{
+        min-width: 122%;
+        margin: auto;
+    }
+
+    .thought{
+        display: none;
+    }
+
+    header{
+        justify-content: center;
+        min-width: 190vw;
+    }
+
+    .project-container .project-head{
+        width: 150%;
+    }
+
+    .project-container .project-head a{
+        min-width: 120px;
+    }
+
+    .probox{
+        min-width: 55%;
+        position: static;
+    }
+
+    .lang-box{
+        min-width: 110%;
+    }
+
+    .skill-img-cont{
+        min-width: 100vw;
+    }
+
+    .skill-container{
+        min-width: 100vw;
+    }
+
+    .skill-img-cont img{
+        display: none;
+    }
+
+    #skills{
+        margin: 70px;
+    }
+
+    #about{
+        min-width: 170vw;
+
+    }
+    .about-left{
+        min-width: 50%;
+        max-width: 50%;
+    }
+    .about-head{
+        min-width: 130vw;
+        margin: 10px;
+    }
+
+    .about-btn{
+        display: none;
+    }
+
+    .contact-head{
+        min-width: 130vw;
+    }
+
+    .contact-body{
+        min-width: 115vw;
+    }
+
+    footer{
+        min-width: 185vw;
+    }
+
+    hr{
+        min-width: 190vw;
+    }
+
+    .heading{
+        width: 100vw;
+        margin: 35px;
+        position: static;
+    }
+
+    .apps-head{
+        min-width: 100vw;
+    }
+
+    .apps-body{
+        margin-bottom: 365px;
+        min-width: 175vw;
+    }
+}
 
 @media only screen and (min-width: 769px) and (max-width:1024px) {
     .container {
