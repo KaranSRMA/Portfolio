@@ -1,185 +1,266 @@
 @media only screen and (max-width:768px) {
     nav {
-        margin-left: 50px;
         min-width: 95%;
     }
+
     .container {
         margin: 100px auto;
         flex-direction: column;
         gap: 50px;
-        min-width: 135vw;
-        position:static;
+        min-width: 90vw;
+        position: static;
     }
 
-    .socialprofile{
+    .socialprofile {
         display: none;
     }
-    
-    .container-head{
+
+    .container-head {
         min-width: 75%;
         margin: auto;
     }
+
+    .container-head h2 {
+        font-size: 1em;
+    }
+
     .container .container-head button {
         display: none;
     }
 
-    .container-image{
+    .container-image {
         width: 70%;
         margin: auto;
     }
 
-    #projects{
-        margin:auto;
-        min-width: 135vw;
-        max-width: 135vw;
+    .container-image .box {
+        font-size: 0.8em;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 5px 5px;
+        margin: 0px;
     }
 
-    .project-detail{
-        min-width: 122%;
-        margin: auto;
-    }
-
-    .thought{
+    .navbar {
         display: none;
     }
 
-    header{
+    .project-detail {
+        min-width: 122%;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .thought {
+        display: none;
+    }
+
+    header {
         justify-content: center;
-        min-width: 190vw;
+        min-width: 90vw;
     }
 
-    .project-container .project-head{
-        width: 150%;
+    .project-container .project-head {
+        font-size: 0.7em;
+        width: 95%;
     }
 
-    .project-container .project-head a{
-        min-width: 120px;
+    .project-container .project-head a {
+        margin: 5px 0px;
     }
 
-    .probox{
+    .project-detail {
+        min-width: 100%;
+    }
+
+    .probox {
         min-width: 55%;
         position: static;
     }
 
-    .lang-box{
-        min-width: 110%;
+    .pro-line {
+        margin: 10px;
+        min-width: 20%;
     }
 
-    .skill-img-cont{
-        min-width: 100vw;
+    .lang-box {
+        min-width: 55%;
+        max-width: 55%;
+        font-size: 0.9em;
+        height: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .skill-container{
-        min-width: 100vw;
+    .skill-container {
+        min-width: 80vw;
+        margin: 20px;
     }
 
-    .skill-img-cont img{
+    .skill-img-cont img {
         display: none;
     }
 
-    #skills{
-        margin: 70px;
+    #skills {
+        min-width: 90vw;
+        max-width: 90vw;
     }
 
-    #about{
-        min-width: 170vw;
+    #about {
+        min-width: 80vw;
+        margin-top: 715px;
+        display: block;
 
     }
-    .about-left{
-        min-width: 50%;
-        max-width: 50%;
+
+    .about-right img{
+        display: none;
     }
-    .about-head{
-        min-width: 130vw;
+
+    .about-left {
+        min-width: 85%;
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .about-head {
+        min-width: 85vw;
+        font-size: 0.8em;
         margin: 10px;
     }
 
-    .about-btn{
+    .about-head h2{
+        min-width: 50vw;
+    }
+
+    .about-btn {
         display: none;
     }
 
-    .contact-head{
-        min-width: 130vw;
+    #contact{
+        margin: 30px;
     }
 
-    .contact-body{
-        min-width: 115vw;
+    .contact-head {
+        min-width: 85vw;
+        font-size: 0.8em;
     }
 
-    footer{
-        min-width: 185vw;
+    .contact-body {
+        min-width: 80vw;
+        font-size: 0.8em;
     }
 
-    hr{
-        min-width: 190vw;
-    }
-
-    .heading{
-        width: 100vw;
-        margin: 35px;
-        position: static;
-    }
-
-    .apps-head{
+    footer {
         min-width: 100vw;
+        font-size: 0.5em;
+        margin: 10px 0px;
     }
 
-    .apps-body{
+    .foot-right ul{
+        padding: 30px 15px 0px 0px;
+    }
+    .foot-right ul li{
+        font-size: 15px !important;
+    }
+
+    .heading {
+        width: 80vw;
+        margin: auto;
+        position: static;
+        font-size: 0.8em;
+    }
+
+    .apps-head {
+        min-width: 80vw;
+        font-size: 0.8em;
+    }
+
+    .apps-body {
         margin-bottom: 365px;
-        min-width: 175vw;
+        min-width: 80vw;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media only screen and (min-width: 769px) and (max-width:1024px) {
     .container {
-        margin-left: 175px;
+        margin-left: 150px;
         gap: 35px;
     }
-    .container .container-head{
+
+    .container .container-head {
         min-width: 40vw;
     }
-    .container .container-head button{
+
+    .container .container-head button {
         min-width: 35%;
     }
-    nav{
-        min-width: 80vw;
-    }
-    .thought{
-        display: none;
-    }
-    #projects{
-        margin: -50px 110px 125px 110px;
+
+    .container-image {
+        min-width: 40%;
+        max-width: 40%;
     }
 
-    .project-container .project-head{
+    nav {
+        min-width: 80vw;
+        margin: 35px 30px;
+    }
+
+    .thought {
+        display: none;
+    }
+
+    #projects {
+        margin: -50px 0px 125px 25px;
+    }
+
+    .project-container .project-head {
         min-width: 60vw;
         max-width: 60vw;
     }
-    .project-container .project-head .pro-line{
+
+    .project-container .project-head .pro-line {
         min-width: 25%;
     }
-    .project-container .project-head a{
+
+    .project-container .project-head a {
         min-width: 25%;
     }
+
     .skill-img-cont img {
         min-width: 50%;
     }
-    hr{
-        min-width: 125%;
+
+    .about-right img {
+        min-width: 35vw;
+        max-width: 35vw;
+    }
+
+    header {
+        margin-left: -50px;
+    }
+
+    .container-image .box {
+        font-size: 0.75em;
+        margin: 0px;
     }
 }
 
 
 /* media query */
-@media only screen and (min-width: 1025px){
+@media only screen and (min-width: 1025px) {
     .container {
         margin-left: 190px;
     }
+
     .container .container-head button {
         width: 30%;
     }
 
-    .project-container .project-head a{
+    .project-container .project-head a {
         min-width: 25%;
     }
 
