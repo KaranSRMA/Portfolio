@@ -13,11 +13,36 @@
         </div>
         <div class="navbar">
             <ul>
-                <li><a href="/"  class=<%= active==="home"?"active":"" %>><span class=<%= active!=='home'?'highlight':"" %>>#</span>home</a></li>
-                <li><a href="projects" class=<%= active==="projects"?"active":"" %>><span class=<%= active!=='projects'?'highlight':"" %>>#</span>works</a></li>
+                <li><a href="/" class=<%=active==="home" ?"active":"" %>><span class=<%=active!=='home' ?'highlight':""
+                            %>>#</span>home</a></li>
+                <li><a href="projects" class=<%=active==="projects" ?"active":"" %>><span class=<%=active!=='projects'
+                            ?'highlight':"" %>>#</span>works</a></li>
                 <li><a href="/#about"><span class="highlight">#</span>about-me</a></li>
                 <li><a href="/#contact"><span class="highlight">#</span>contact-me</a></li>
             </ul>
         </div>
     </nav>
+
+    <div class="hamburger">
+        <div class="hamicon" id="hamicon">
+            <span class="line-top" id="line-top"></span>
+            <span class="line-bottom" id="line-bottom"></span>
+        </div>
+
+        <div class="ham-menu" id="ham-menu">
+            <ul>
+                <li><a href="/" class=<%=active==="home" ?"active":"" %>><span class=<%=active!=='home' ?'highlight':""
+                            %>>#</span>home</a></li>
+                <li><a href="projects" class=<%=active==="projects" ?"active":"" %>><span class=<%=active!=='projects'
+                            ?'highlight':"" %>>#</span>works</a></li>
+                <li><a href="/#about"><span class="highlight">#</span>about-me</a></li>
+                <li><a href="/#contact"><span class="highlight">#</span>contact-me</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
 </header>

@@ -180,19 +180,40 @@
                 </div>
             </section>
         </main>
+        <script>
+            let hamicon = document.getElementById('hamicon');
+            let menu = document.getElementById('ham-menu');
+            let linetop = document.getElementById('line-top');
+            let linebottom = document.getElementById('line-bottom');
+            hamicon.addEventListener('click', () => {
+                if (menu.style.display === 'none') {
+                    menu.style.display = 'block';
+                    linetop.style.transform = 'rotate(45deg)';
+                    linebottom.style.transform = 'rotate(-45deg) translate(8px,-8px)';
+                    linebottom.style.width = '8vw';
+                    linebottom.style.height = '1px';
+                } else {
+                    menu.style.display = 'none';
+                    linetop.style.transform = 'rotate(0)';
+                    linebottom.style.transform = 'rotate(0) translate(0px,0px)';
+                    linebottom.style.width = '5vw';
+                    linebottom.style.height = '2px';
+                }
+            })
+        </script>
 
         <%- include("footer.ejs") %>
             <!-- Toastify JS -->
             <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
             <script>
-          // Check if there is a successMessage query parameter
-          <% if (successMessage) { %>
-                    // Show success toaster
-                    Toastify({
-                        text: "<%= successMessage %>",
-                        backgroundColor: "green",
-                        duration: 3000
-                    }).showToast();
+                    // Check if there is a successMessage query parameter
+                    <% if (successMessage) { %>
+                        // Show success toaster
+                        Toastify({
+                            text: "<%= successMessage %>",
+                            backgroundColor: "green",
+                            duration: 3000
+                        }).showToast();
           <% } %>
             </script>
 

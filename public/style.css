@@ -474,3 +474,7 @@ hr{
 .contact{
     text-decoration: none;
 }
+
+.hamburger{
+    display: none;
+}

@@ -21,56 +21,77 @@
 
 <body>
     <%- include('navbar.ejs'); %>
-    <main>
-        <div class="heading">
-            <h2><span class="highlight">/</span>projects</h2>
-            <p>List of my all projects</p>
-        </div>
-
-        <!-- complete apps section  -->
-        <section id="complete-apps">
-            <div class="apps-head">
-                <h2><span class="highlight">#</span>complete apps</h2>
+        <main>
+            <div class="heading">
+                <h2><span class="highlight">/</span>projects</h2>
+                <p>List of my all projects</p>
             </div>
-            <div class="apps-body">
 
-                <div class="app-items">
-                    <img src="./images/chertnodes.png" alt="image" class="proimg">
-                    <p class="tags">HTML SCSS Python Flask</p>
-                    <h3>ChertNodes</h3>
-                    <p class="ptag">Minecraft servers hosting</p>
-                    <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
+            <!-- complete apps section  -->
+            <section id="complete-apps">
+                <div class="apps-head">
+                    <h2><span class="highlight">#</span>complete apps</h2>
                 </div>
+                <div class="apps-body">
 
-                <div class="app-items">
-                    <img src="./images/protectx.png" alt="image" class="proimg">
-                    <p class="tags">React Express Discord.js Node.js</p>
-                    <h3>ProtectX</h3>
-                    <p class="ptag">Discord anti crash-bot</p>
-                    <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
+                    <div class="app-items">
+                        <img src="./images/chertnodes.png" alt="image" class="proimg">
+                        <p class="tags">HTML SCSS Python Flask</p>
+                        <h3>ChertNodes</h3>
+                        <p class="ptag">Minecraft servers hosting</p>
+                        <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
+                    </div>
+
+                    <div class="app-items">
+                        <img src="./images/protectx.png" alt="image" class="proimg">
+                        <p class="tags">React Express Discord.js Node.js</p>
+                        <h3>ProtectX</h3>
+                        <p class="ptag">Discord anti crash-bot</p>
+                        <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
+                    </div>
+
+                    <div class="app-items">
+                        <img src="./images/kahoot.png" alt="image" class="proimg">
+                        <p class="tags">CSS Express Node.js</p>
+                        <h3>Kahoot Answers Viewer</h3>
+                        <p class="ptag">Get answers to your kahoot quiz</p>
+                        <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
+                    </div>
+
+                    <div class="app-items">
+                        <img src="./images/kotikbot.png" alt="image" class="proimg">
+                        <p class="tags">HTML CSS JS</p>
+                        <h3>Kotik Bot</h3>
+                        <p class="ptag">Multi-functional discord bot</p>
+                        <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
+                    </div>
+
                 </div>
+            </section>
+        </main>
+        <script>
+            let hamicon = document.getElementById('hamicon');
+            let menu = document.getElementById('ham-menu');
+            let linetop = document.getElementById('line-top');
+            let linebottom = document.getElementById('line-bottom');
+            hamicon.addEventListener('click', () => {
+                if (menu.style.display === 'none') {
+                    menu.style.display = 'block';
+                    linetop.style.transform = 'rotate(45deg)';
+                    linebottom.style.transform = 'rotate(-45deg) translate(8px,-8px)';
+                    linebottom.style.width = '8vw';
+                    linebottom.style.height = '1px';
+                } else {
+                    menu.style.display = 'none';
+                    linetop.style.transform = 'rotate(0)';
+                    linebottom.style.transform = 'rotate(0) translate(0px,0px)';
+                    linebottom.style.width = '5vw';
+                    linebottom.style.height = '2px';
+                }
+            })
+        </script>
 
-                <div class="app-items">
-                    <img src="./images/kahoot.png" alt="image" class="proimg">
-                    <p class="tags">CSS Express Node.js</p>
-                    <h3>Kahoot Answers Viewer</h3>
-                    <p class="ptag">Get answers to your kahoot quiz</p>
-                    <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
-                </div>
-
-                <div class="app-items">
-                    <img src="./images/kotikbot.png" alt="image" class="proimg">
-                    <p class="tags">HTML CSS JS</p>
-                    <h3>Kotik Bot</h3>
-                    <p class="ptag">Multi-functional discord bot</p>
-                    <button class="pbutton">view <i class="fa-solid fa-arrows-left-right"></i></button>
-                </div>
-
-            </div>
-        </section>
-    </main>
-    
-    <%- include("footer.ejs") %>
+        <%- include("footer.ejs") %>
 </body>
 
 </html>

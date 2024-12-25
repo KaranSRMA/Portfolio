@@ -1,6 +1,6 @@
 @media only screen and (max-width:768px) {
     nav {
-        min-width: 95%;
+        min-width: 35%;
     }
 
     .container {
@@ -114,7 +114,7 @@
 
     }
 
-    .about-right img{
+    .about-right img {
         display: none;
     }
 
@@ -130,7 +130,7 @@
         margin: 10px;
     }
 
-    .about-head h2{
+    .about-head h2 {
         min-width: 50vw;
     }
 
@@ -138,7 +138,7 @@
         display: none;
     }
 
-    #contact{
+    #contact {
         margin: 30px;
     }
 
@@ -158,10 +158,11 @@
         margin: 10px 0px;
     }
 
-    .foot-right ul{
+    .foot-right ul {
         padding: 30px 15px 0px 0px;
     }
-    .foot-right ul li{
+
+    .foot-right ul li {
         font-size: 15px !important;
     }
 
@@ -182,6 +183,68 @@
         min-width: 80vw;
         display: flex;
         flex-direction: column;
+    }
+
+    /* hamburger  */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 1;
+        transform: translate(-50px, 0px);
+    }
+
+    .hamburger .hamicon {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 10px;
+        padding: 25px;
+        transform: translate(5px, 10px);
+    }
+
+    .hamicon .line-top {
+        width: 8vw;
+        height: 1px;
+        background-color: white;
+    }
+
+    .hamicon .line-bottom {
+        width: 5vw;
+        height: 1.5px;
+        background-color: white;
+    }
+
+    .ham-menu {
+        min-width: 115%;
+        transform: translate(-80px, 10px);
+        padding: 10px;
+        background-color: #1d2025;
+        z-index: 1;
+        display: none;
+    }
+
+    .ham-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ham-menu ul li {
+        list-style: none;
+    }
+
+    .ham-menu ul li a {
+        text-decoration: none;
+    }
+
+    .icons {
+        margin-top: 50px;
+        display: flex;
+        gap: 15px;
+        font-size: 2em;
+        width: 30%;
     }
 }
 
